@@ -40,6 +40,7 @@ import './polyfills/dataset.js';
             linkButtonContent: 'L',                                        // HTML content for link button
             deleteButtonContent: 'X',                                      // HTML content for delete button
             showErrorOnLoadBar: true,                                      // decides if the reason for a rejected file will be displayed over its load bar;
+            noResultContainer: false,
                                                                            // in case the file is rejected because of more than one reason, only the first one will be displayed on the bar;
             allowDuplicates: false,                                        // allow upload duplicates
             duplicatesWarning: false,                                      // show a message in the loading area when trying to load a duplicated file
@@ -431,17 +432,19 @@ import './polyfills/dataset.js';
 
 
         this._createResultContainer = (fileData) => {
-            let index = fileData.index;
-            let resultElemContainer = document.createElement('div');
+            if(!instance._options.noResultContainer) {
+                let index = fileData.index;
+                let resultElemContainer = document.createElement('div');
 
-            resultElemContainer.className = this._options.resultFileContainerClass;
-            resultElemContainer.dataset.index = index;
-            resultElemContainer.insertAdjacentHTML('beforeend', `<div>File: ${index}</div>`);
-            resultElemContainer.insertAdjacentHTML('beforeend', `<input type="text" name="${this._options.resultPrefix}[${index}][${this._options.resultInputNames[0]}]" value="${fileData.name}" />`);
-            resultElemContainer.insertAdjacentHTML('beforeend', `<input type="text" name="${this._options.resultPrefix}[${index}][${this._options.resultInputNames[1]}]" value="${fileData.type}" />`);
-            resultElemContainer.insertAdjacentHTML('beforeend', `<textarea name="${this._options.resultPrefix}[${index}][${this._options.resultInputNames[2]}]">${fileData.result}</textarea>`);
-            resultElemContainer.insertAdjacentHTML('beforeend', `<input type="text" name="${this._options.resultPrefix}[${index}][${this._options.resultInputNames[3]}]" value="${fileData.size}" />`);
-            $resultContainer.appendChild(resultElemContainer);
+                resultElemContainer.className = this._options.resultFileContainerClass;
+                resultElemContainer.dataset.index = index;
+                resultElemContainer.insertAdjacentHTML('beforeend', `<div>File: ${index}</div>`);
+                resultElemContainer.insertAdjacentHTML('beforeend', `<input type="text" name="${this._options.resultPrefix}[${index}][${this._options.resultInputNames[0]}]" value="${fileData.name}" />`);
+                resultElemContainer.insertAdjacentHTML('beforeend', `<input type="text" name="${this._options.resultPrefix}[${index}][${this._options.resultInputNames[1]}]" value="${fileData.type}" />`);
+                resultElemContainer.insertAdjacentHTML('beforeend', `<textarea name="${this._options.resultPrefix}[${index}][${this._options.resultInputNames[2]}]">${fileData.result}</textarea>`);
+                resultElemContainer.insertAdjacentHTML('beforeend', `<input type="text" name="${this._options.resultPrefix}[${index}][${this._options.resultInputNames[3]}]" value="${fileData.size}" />`);
+                $resultContainer.appendChild(resultElemContainer);
+            }
         };
 
         // test if loading is allowed

@@ -1,38 +1,39 @@
 {
-    "name": "fileUploader",
-    "version": "5.8.14",
-    "description": "A HTML5 file uploader skeleton",
-    "devDependencies": {
-        "@babel/core": "^7.4.3",
-        "@babel/preset-env": "^7.4.3",
-        "babel-preset-edge": "^5.2.2",
-        "babelify": "^10.0.0",
-        "browser-sync": "^2.26.3",
-        "browserify": "^16.2.3",
-        "browserify-shim": "^3.8.14",
-        "deepmerge": "^3.2.0",
-        "del": "^4.1.0",
-        "directory-exists": "^2.0.1",
-        "element-qsa-scope": "^1.1.0",
-        "gulp-changed": "^3.2.0",
-        "gulp-if": "^2.0.2",
-        "gulp-sass": "^5.0.0",
-        "node-sass": "^6.0.1",
-        "gulp-sourcemaps": "^2.6.5",
-        "gulp-uglify": "^3.0.2",
-        "merge-stream": "^1.0.1",
-        "vinyl-buffer": "^1.0.1",
-        "vinyl-source-stream": "^2.0.0"
-    },
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Cerealkillerway/fileUploader"
-    },
-    "dependencies": {
-        "@babel/runtime": "^7.4.5",
-        "@babel/runtime-corejs3": "^7.4.5",
-        "core-js": "^3.1.4",
-        "gulp": "^4.0.2"
-    }
+  "name": "fileUploader",
+  "version": "5.8.14",
+  "description": "A HTML5 file uploader skeleton",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-preset-edge": "^5.5.1",
+    "babelify": "^10.0.0",
+    "browser-sync": "^3.0.3",
+    "browserify": "^17.0.1",
+    "browserify-shim": "^3.8.16",
+    "deepmerge": "^4.3.1",
+    "del": "^4.1.1",
+    "directory-exists": "^2.0.1",
+    "element-qsa-scope": "^1.1.0",
+    "gulp-changed": "^5.0.2",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "merge-stream": "^2.0.0",
+    "node-sass": "^9.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cerealkillerway/fileUploader"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.26.0",
+    "@babel/runtime-corejs3": "^7.26.0",
+    "core-js": "^3.40.0",
+    "gulp": "^5.0.0",
+    "sass": "^1.83.4"
+  }
 }

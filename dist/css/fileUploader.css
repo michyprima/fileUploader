@@ -1,147 +1,187 @@
-.fileUploader .filesContainer .newElement .fileTitle, .fileUploader .filesContainer .newElement .loadBar, .fileUploader .filesContainer .newElement .fileActions, .fileUploader .result > div {
+.fileUploader .result > div, .fileUploader .filesContainer .newElement .fileActions, .fileUploader .filesContainer .newElement .loadBar, .fileUploader .filesContainer .newElement .fileTitle {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .fileUploader .dropZone {
   transition: all 1s;
-  -webkit-transition: all 1s; }
+  -webkit-transition: all 1s;
+}
 
 .fileUploader {
-  color: #3d3b4d;
-  font-weight: bold; }
-  .fileUploader img {
-    display: block; }
-  .fileUploader .hide {
-    display: none !important; }
-  .fileUploader .inputContainer {
-    display: none; }
-  .fileUploader .dropZone {
-    min-height: 150px;
-    width: calc(100% - 6px);
-    margin-top: 25px;
-    border: dashed 3px #3d3b4d;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 150px;
-    font-size: 36px;
-    color: #85829f;
-    cursor: pointer; }
-  .fileUploader .highlight {
-    color: #76ff03;
-    border-color: #76ff03; }
-  .fileUploader .filesContainer {
-    margin-top: 25px; }
-    .fileUploader .filesContainer .error .fileTitle {
-      color: #757dd9 !important; }
-    .fileUploader .filesContainer .error .loadBar {
-      border: solid 2px #edeefa !important; }
-      .fileUploader .filesContainer .error .loadBar .errorMsg {
-        color: #edeefa !important;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 40px;
-        height: 100%;
-        width: 100%;
-        background-color: transparent !important;
-        text-align: center; }
-    .fileUploader .filesContainer .error .fileActions div {
-      color: #757dd9 !important; }
-    .fileUploader .filesContainer .error .fileActions a {
-      color: #757dd9 !important; }
-    .fileUploader .filesContainer .fileThumb {
-      max-height: 130px;
-      margin: auto; }
-    .fileUploader .filesContainer .reloadedElement .fileTitle {
-      color: #1b5e20 !important; }
-    .fileUploader .filesContainer .reloadedElement .loadBar {
-      border: solid 2px #1b5e20 !important; }
-      .fileUploader .filesContainer .reloadedElement .loadBar div {
-        background-color: #1b5e20 !important;
-        background: linear-gradient(to right, #32ad3b, #1b5e20 95%) !important; }
-    .fileUploader .filesContainer .reloadedElement .fileActions a, .fileUploader .filesContainer .reloadedElement .fileActions .fileDelete, .fileUploader .filesContainer .reloadedElement .fileActions .fileSee {
-      color: #1b5e20 !important; }
-    .fileUploader .filesContainer .newElement {
-      width: 100%;
-      height: 40px;
-      margin-bottom: 7px; }
-      .fileUploader .filesContainer .newElement input {
-        background-color: transparent; }
-        .fileUploader .filesContainer .newElement input:focus {
-          outline: none !important; }
-      .fileUploader .filesContainer .newElement > input, .fileUploader .filesContainer .newElement > div {
-        float: left; }
-      .fileUploader .filesContainer .newElement .fileTitle {
-        width: 38%;
-        margin-right: 2%;
-        color: #3d3b4d;
-        font-size: 18px;
-        border: none;
-        text-align: right;
-        position: relative;
-        top: 10px; }
-      .fileUploader .filesContainer .newElement .fileExt {
-        display: none; }
-      .fileUploader .filesContainer .newElement .loadBar {
-        border: solid 2px #3d3b4d;
-        width: 28%;
-        margin-right: 2%;
-        height: 100%; }
-        .fileUploader .filesContainer .newElement .loadBar div {
-          background-color: #3d3b4d;
-          width: 0;
-          height: 100%;
-          background: linear-gradient(to right, #6b6787, #3d3b4d 95%);
-          transition: width 1.5s; }
-      .fileUploader .filesContainer .newElement .fileActions {
-        position: relative;
-        width: 30%;
-        position: relative;
-        top: 10px; }
-        .fileUploader .filesContainer .newElement .fileActions div, .fileUploader .filesContainer .newElement .fileActions a {
-          display: inline-block; }
-          .fileUploader .filesContainer .newElement .fileActions div:first-child, .fileUploader .filesContainer .newElement .fileActions a:first-child {
-            margin-right: 25px; }
-        .fileUploader .filesContainer .newElement .fileActions a {
-          text-decoration: none !important;
-          color: #3d3b4d;
-          cursor: pointer; }
-        .fileUploader .filesContainer .newElement .fileActions .fileDelete, .fileUploader .filesContainer .newElement .fileActions .fileSee {
-          cursor: pointer; }
-  .fileUploader .result {
-    color: #923535;
-    border-bottom: solid 3px #923535;
-    border-left: solid 3px #923535;
-    border-right: solid 3px #923535;
-    min-height: 35px;
-    padding: 15px; }
-    .fileUploader .result > div {
-      margin-bottom: 15px;
-      width: 49%;
-      margin-right: 1%;
-      float: left; }
-      .fileUploader .result > div input {
-        width: 100%;
-        display: block; }
-      .fileUploader .result > div textarea {
-        width: calc(100% - 2px); }
-    .fileUploader .result:last-child:after {
-      content: '';
-      display: block;
-      clear: both; }
-  .fileUploader .debugMode {
-    background-color: #923535;
-    background: linear-gradient(to top, #923535 30%, #c15353);
-    color: #dedede;
-    margin: 35px auto auto 0;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 15px;
-    padding-bottom: 25px; }
-  .fileUploader .debug {
-    background-color: #923535;
-    color: #dedede;
-    text-align: center; }
-    .fileUploader .debug.sizeAvailable {
-      padding-bottom: 11px; }
+  color: rgb(61, 59, 77);
+  font-weight: bold;
+}
+.fileUploader img {
+  display: block;
+}
+.fileUploader .hide {
+  display: none !important;
+}
+.fileUploader .inputContainer {
+  display: none;
+}
+.fileUploader .dropZone {
+  min-height: 150px;
+  width: calc(100% - 6px);
+  margin-top: 25px;
+  border: dashed 3px rgb(61, 59, 77);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  font-size: 36px;
+  color: rgb(133.125, 129.875, 159.125);
+  cursor: pointer;
+}
+.fileUploader .highlight {
+  color: #76ff03;
+  border-color: #76ff03;
+}
+.fileUploader .filesContainer {
+  margin-top: 25px;
+}
+.fileUploader .filesContainer .error .fileTitle {
+  color: rgb(117.2608695652, 124.9130434783, 216.7391304348) !important;
+}
+.fileUploader .filesContainer .error .loadBar {
+  border: solid 2px #edeefa !important;
+}
+.fileUploader .filesContainer .error .loadBar .errorMsg {
+  color: #edeefa !important;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  height: 100%;
+  width: 100%;
+  background-color: transparent !important;
+  text-align: center;
+}
+.fileUploader .filesContainer .error .fileActions div {
+  color: rgb(117.2608695652, 124.9130434783, 216.7391304348) !important;
+}
+.fileUploader .filesContainer .error .fileActions a {
+  color: rgb(117.2608695652, 124.9130434783, 216.7391304348) !important;
+}
+.fileUploader .filesContainer .fileThumb {
+  max-height: 130px;
+  margin: auto;
+}
+.fileUploader .filesContainer .reloadedElement .fileTitle {
+  color: #1b5e20 !important;
+}
+.fileUploader .filesContainer .reloadedElement .loadBar {
+  border: solid 2px #1b5e20 !important;
+}
+.fileUploader .filesContainer .reloadedElement .loadBar div {
+  background-color: #1b5e20 !important;
+  background: linear-gradient(to right, rgb(49.7603305785, 173.2396694215, 58.9752066116), #1b5e20 95%) !important;
+}
+.fileUploader .filesContainer .reloadedElement .fileActions a, .fileUploader .filesContainer .reloadedElement .fileActions .fileDelete, .fileUploader .filesContainer .reloadedElement .fileActions .fileSee {
+  color: #1b5e20 !important;
+}
+.fileUploader .filesContainer .newElement {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 7px;
+}
+.fileUploader .filesContainer .newElement input {
+  background-color: transparent;
+}
+.fileUploader .filesContainer .newElement input:focus {
+  outline: none !important;
+}
+.fileUploader .filesContainer .newElement > input, .fileUploader .filesContainer .newElement > div {
+  float: left;
+}
+.fileUploader .filesContainer .newElement .fileTitle {
+  width: 38%;
+  margin-right: 2%;
+  color: rgb(61, 59, 77);
+  font-size: 18px;
+  border: none;
+  text-align: right;
+  position: relative;
+  top: 10px;
+}
+.fileUploader .filesContainer .newElement .fileExt {
+  display: none;
+}
+.fileUploader .filesContainer .newElement .loadBar {
+  border: solid 2px rgb(61, 59, 77);
+  width: 28%;
+  margin-right: 2%;
+  height: 100%;
+}
+.fileUploader .filesContainer .newElement .loadBar div {
+  background-color: rgb(61, 59, 77);
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, rgb(106.75, 103.25, 134.75), rgb(61, 59, 77) 95%);
+  transition: width 1.5s;
+}
+.fileUploader .filesContainer .newElement .fileActions {
+  position: relative;
+  width: 30%;
+  position: relative;
+  top: 10px;
+}
+.fileUploader .filesContainer .newElement .fileActions div, .fileUploader .filesContainer .newElement .fileActions a {
+  display: inline-block;
+}
+.fileUploader .filesContainer .newElement .fileActions div:first-child, .fileUploader .filesContainer .newElement .fileActions a:first-child {
+  margin-right: 25px;
+}
+.fileUploader .filesContainer .newElement .fileActions a {
+  text-decoration: none !important;
+  color: rgb(61, 59, 77);
+  cursor: pointer;
+}
+.fileUploader .filesContainer .newElement .fileActions .fileDelete, .fileUploader .filesContainer .newElement .fileActions .fileSee {
+  cursor: pointer;
+}
+.fileUploader .result {
+  color: #923535;
+  border-bottom: solid 3px #923535;
+  border-left: solid 3px #923535;
+  border-right: solid 3px #923535;
+  min-height: 35px;
+  padding: 15px;
+}
+.fileUploader .result > div {
+  margin-bottom: 15px;
+  width: 49%;
+  margin-right: 1%;
+  float: left;
+}
+.fileUploader .result > div input {
+  width: 100%;
+  display: block;
+}
+.fileUploader .result > div textarea {
+  width: calc(100% - 2px);
+}
+.fileUploader .result:last-child:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.fileUploader .debugMode {
+  background-color: #923535;
+  background: linear-gradient(to top, #923535 30%, rgb(192.5452261307, 82.9547738693, 82.9547738693));
+  color: #dedede;
+  margin: 35px auto auto 0;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+.fileUploader .debug {
+  background-color: #923535;
+  color: #dedede;
+  text-align: center;
+}
+.fileUploader .debug.sizeAvailable {
+  padding-bottom: 11px;
+}
